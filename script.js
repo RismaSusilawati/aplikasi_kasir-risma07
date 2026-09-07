@@ -64,7 +64,7 @@ function checkout(){
  const paid=payment==="Cash"?cash:t.total, change=payment==="Cash"?cash-t.total:0;
  const now=new Date(), no="TRX-"+Date.now().toString().slice(-6);
  document.getElementById("receiptContent").innerHTML=`
-  <h2>QuickKasir</h2><p class="center">Struk Pembelian</p>
+  <h2>KasirRisma</h2><p class="center">Struk Pembelian</p>
   <p class="center">${now.toLocaleString("id-ID")}<br>${no}</p><hr style="margin:12px 0">
   ${cart.map(x=>`<div class="receipt-row"><span>${x.name} × ${x.qty}</span><span>${rupiah(x.price*x.qty)}</span></div>`).join("")}
   <div class="receipt-row"><span>Subtotal</span><span>${rupiah(t.subtotal)}</span></div>
