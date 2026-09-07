@@ -1,4 +1,4 @@
-# QuickKasir Web
+# KasirRisma Web
 
 Aplikasi kasir sederhana yang bisa langsung dipasang di GitHub Pages.
 
